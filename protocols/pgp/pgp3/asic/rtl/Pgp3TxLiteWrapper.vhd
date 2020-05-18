@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
--- Title      : 
+-- Title      :
 -------------------------------------------------------------------------------
 -- Company    : SLAC National Accelerator Laboratory
--- Platform   : 
+-- Platform   :
 -- Standard   : VHDL'93/02
 -------------------------------------------------------------------------------
--- Description: 
+-- Description:
 -------------------------------------------------------------------------------
--- This file is part of SURF. It is subject to
+-- This file is part of work. It is subject to
 -- the license terms in the LICENSE.txt file found in the top-level directory
 -- of this distribution and at:
 --    https://confluence.slac.stanford.edu/display/ppareg/LICENSE.html.
@@ -19,10 +19,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-library surf;
-use surf.StdRtlPkg.all;
-use surf.AxiStreamPkg.all;
-use surf.Pgp3Pkg.all;
+library work;
+use work.StdRtlPkg.all;
+use work.AxiStreamPkg.all;
+use work.Pgp3Pkg.all;
 
 entity Pgp3TxLiteWrapper is
 
@@ -68,7 +68,7 @@ begin
    pgpTxMaster.tLast              <= txEof;
 
 
-   U_Pgp3TxLite_1 : entity surf.Pgp3TxLite
+   U_Pgp3TxLite_1 : entity work.Pgp3TxLite
       generic map (
          TPD_G    => TPD_G,
          NUM_VC_G => 1)
